@@ -55,7 +55,7 @@ The evaluation results of our code is as follows:
   
 <p align="center"><img src="./Fig/ARA_Results.png"  width="750" height="380">
   
-<p align="center"><img src="./Fig/ABA_Results.png"  width="650" height="380">
+<p align="center"><img src="./Fig/ABA_Results.png"  width="750" height="330">
 
 ## Lisense
 
