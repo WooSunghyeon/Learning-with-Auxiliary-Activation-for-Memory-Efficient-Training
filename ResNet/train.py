@@ -125,8 +125,8 @@ def main():
             transforms.ToTensor(),
             transforms.Normalize(tiny_mean, tiny_std)])
         num_workers = 16
-        trainset = torchvision.datasets.ImageFolder('/nfs/home/wshey/tiny-imagenet/train', transform=transform_train)
-        testset = torchvision.datasets.ImageFolder('/nfs/home/wshey/tiny-imagenet/val', transform=transform_test)
+        trainset = torchvision.datasets.ImageFolder('../Data/tiny-imagenet/train', transform=transform_train)
+        testset = torchvision.datasets.ImageFolder('../Data/tiny-imagenet/val', transform=transform_test)
         trainloader = torch.utils.data.DataLoader(trainset, batch_size=args.batch_size, shuffle=True,
                                               num_workers=num_workers)
         testloader = torch.utils.data.DataLoader(testset, batch_size=args.test_batch_size, shuffle=False,
@@ -146,8 +146,8 @@ def main():
             transforms.ToTensor(),
             transforms.Normalize(mean, std)])
         num_workers = 4 * len(args.device)
-        trainset = torchvision.datasets.ImageFolder('/scratchpad/datasets/ImageNet/train', transform=transform_train)
-        testset = torchvision.datasets.ImageFolder('/scratchpad/datasets/ImageNet/val', transform=transform_test)
+        trainset = torchvision.datasets.ImageFolder('../Data/ImageNet/train', transform=transform_train)
+        testset = torchvision.datasets.ImageFolder('../Data/ImageNet/val', transform=transform_test)
         trainloader = torch.utils.data.DataLoader(trainset, batch_size=args.batch_size, shuffle=True,
                                               num_workers=num_workers)
         testloader = torch.utils.data.DataLoader(testset, batch_size=args.test_batch_size, shuffle=False,
