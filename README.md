@@ -57,9 +57,7 @@ python train.py --batch_size 4096 --dataset_name IWSLT --language_direction G2E 
 cd ViT
 python train.py --dataset c10 --label-smoothing --autoaugment --get-li --device 0 --learning-rule asa1
 ```
-
-For experiments in MLP-Mixer with ABA1, run:
-
+ 
 ```train_res18
 cd MLP-Mixer
  python train.py --dataset c10 --model mlp_mixer --autoaugment --cutmix-prob 0.5 --learning-rule asa4 --get-li --device 0
