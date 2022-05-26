@@ -319,5 +319,4 @@ dependencies:
     - yapf==0.32.0
     - yaspin==2.1.0
     - zipp==3.7.0
-prefix: /home/wshey/anaconda3/envs/newas
 
