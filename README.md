@@ -43,19 +43,19 @@ For instance, to train resnet152 model on ImageNet dataset with our ARA (3, 4, 2
 
 ```train_res18
 cd ResNet
- python train.py --dataset ImageNet --model resnet152 --learning-rule ARA --ARA-stride 3, 4, 2, 2 --gcp --device 0 1 2 3 4 5
+python train.py --dataset ImageNet --model resnet152 --learning-rule ARA --ARA-stride 3, 4, 2, 2 --gcp --device 0 1 2 3 4 5
 ```
 
-The other experiments in Transformer, ViT, MLP-Mixer is 
+The other experiments in Transformer, ViT, MLP-Mixer could be performed by 
  
 ```train_res18
 cd Transformer
- python train.py --batch_size 4096 --dataset_name IWSLT --language_direction G2E --learning_rule asa2 --gcp True --device 0 --get_li True
+python train.py --batch_size 4096 --dataset_name IWSLT --language_direction G2E --learning_rule asa2 --gcp True --device 0 --get_li True
 ```
 
 ```train_res18
 cd ViT
- python train.py --dataset c10 --label-smoothing --autoaugment --get-li --device 0 --learning-rule asa1
+python train.py --dataset c10 --label-smoothing --autoaugment --get-li --device 0 --learning-rule asa1
 ```
 
 For experiments in MLP-Mixer with ABA1, run:
