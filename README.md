@@ -18,7 +18,8 @@ To install requirements:
 conda env create -f aal.yaml
 conda activate asap
 ```
-
+## Data 
+ 
 ## Training
 
 See help (--h flag) for available options before executing the code.
@@ -36,7 +37,8 @@ For instance, to train resnet152 model on ImageNet dataset with our ARA (3, 4, 2
 ```train_res18
 python train.py --dataset ImageNet --model resnet152 --learning-rule ARA --ARA-stride 3, 4, 2, 2 --gcp
 ```
-
+## Pretrained Models
+ 
 ## Evaluation
 
 See help (--h flag) for available options before executing the code.
@@ -57,7 +59,9 @@ The evaluation results of our code are as follows:
   
 <p align="center"><img src="./Fig/ABA_Results.png"  width="750" height="330">
 
-## Lisense
+## Learning Indicator
+ 
+ ## Lisense
 
 > All content in this repository is licensed under the MIT license. 
 
