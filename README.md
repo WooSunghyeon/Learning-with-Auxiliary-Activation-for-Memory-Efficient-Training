@@ -8,7 +8,7 @@ This repository is the official implementation of Auxiliary-Activation-Learning.
 
 <p align="center"><img src="./Fig/ARA_Block.png"  width="750" height="500">
  
-<p align="center"><img src="./Fig/ABA_Transformer.png"  width="850" height="650">
+<p align="center"><img src="./Fig/ABA_Transformer.png"  width="850" height="550">
 
 ## Requirements
 
