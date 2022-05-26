@@ -49,21 +49,21 @@ cd ResNet
 For experiments in Transformer with ABA1, run:
 
 ```train_res18
-cd ResNet
+cd Transformer
  python train.py --batch_size 4096 --dataset_name IWSLT --language_direction G2E --learning_rule asa2 --gcp True --device 0 --get_li True
 ```
 
  For experiments in ViT with ASA1, run:
 
 ```train_res18
-cd ResNet
+cd ViT
  python train.py --dataset c10 --label-smoothing --autoaugment --get-li --device 0 --learning-rule asa1
 ```
 
 For experiments in MLP-Mixer with ABA1, run:
 
 ```train_res18
-cd ResNet
+cd MLP-Mixer
  python train.py --dataset c10 --model mlp_mixer --autoaugment --cutmix-prob 0.5 --learning-rule asa4 --get-li --device 0
 ```
 
@@ -100,7 +100,6 @@ The evaluation results of our code are as follows:
  Therefore, `li.py` is provided to make graph of the learning distributions.
 
 ```li
-cd ResNet
 python li.py --li_path <path/to/li>
 ```
 
