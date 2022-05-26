@@ -87,7 +87,7 @@ def main():
             transforms.ToTensor(),
             transforms.Normalize(tiny_mean, tiny_std)])
         num_workers = 16
-        testset = torchvision.datasets.ImageFolder('/nfs/home/wshey/tiny-imagenet/val', transform=transform_test)
+        testset = torchvision.datasets.ImageFolder('../Data/tiny-imagenet/val', transform=transform_test)
         testloader = torch.utils.data.DataLoader(testset, batch_size=args.test_batch_size, shuffle=False,
                                                  num_workers=num_workers)
         
@@ -100,7 +100,7 @@ def main():
             transforms.ToTensor(),
             transforms.Normalize(mean, std)])
         num_workers = 4 * len(args.device)
-        testset = torchvision.datasets.ImageFolder('/scratchpad/datasets/ImageNet/val', transform=transform_test)
+        testset = torchvision.datasets.ImageFolder('../Data/ImageNet/val', transform=transform_test)
         testloader = torch.utils.data.DataLoader(testset, batch_size=args.test_batch_size, shuffle=False,
                                                  num_workers=num_workers)
         
