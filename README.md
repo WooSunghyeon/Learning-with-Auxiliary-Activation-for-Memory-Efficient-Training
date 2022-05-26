@@ -93,7 +93,7 @@ The evaluation results of our code are as follows:
 
  If we use 'get-li' arguments in training, <experiments>_li.npy, whch is the results containing distribution of learning indicator, is generated. 
  
- Therefore, `li.py` is provided to make graph of the learning distributions.
+ Therefore, `learning_indicator.py` is provided to make graph of the learning distributions.
 
 ```li
 python learning_indicator.py --li_path <path/to/li>
