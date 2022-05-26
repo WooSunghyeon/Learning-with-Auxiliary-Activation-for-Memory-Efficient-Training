@@ -68,7 +68,7 @@ cd ResNet
 python train.py --dataset <type of dataset> --model <type of model> --learning-rule <type of learning-rule> --model_path <path/to/model>
 ```
 
- <p align="center"><img src="./Fig/Learning Indicator.png"  width="750" height="330">
+ <p align="center"><img src="./Fig/Learning Indicator.png"  width="750" height="500">
  
  ## Lisense
 
