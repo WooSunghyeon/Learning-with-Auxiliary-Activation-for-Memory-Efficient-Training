@@ -20,7 +20,7 @@ conda activate aal
 ```
 ## Data 
 
- We prepaired Tiny-ImageNet and IWSLT-2016 as follow: [data]([https://www.image-net.org/download](https://drive.google.com/drive/folders/1gogdZW1AUolzVuYBm86r0cIiKo8m32aL?usp=sharing)
+ We prepaired Tiny-ImageNet and IWSLT-2016 as follow: [data](https://drive.google.com/drive/folders/1gogdZW1AUolzVuYBm86r0cIiKo8m32aL?usp=sharing)
  
 ImageNet also can be downloded by [here](https://www.image-net.org/download).
  
