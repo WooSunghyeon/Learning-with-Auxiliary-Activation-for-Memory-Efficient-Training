@@ -21,7 +21,9 @@ conda activate asap
 ## Data 
 
 We prepaired Tiny-ImageNet and IWSLT-2016 as follow:
+ 
 ImageNet also can be downloded by https://www.image-net.org/download.
+ 
 Before training, you have to download this data and put them on data folder in ResNet and Transformer dir. 
  
 ## Training
