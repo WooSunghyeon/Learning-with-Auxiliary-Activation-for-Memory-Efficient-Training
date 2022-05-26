@@ -46,14 +46,12 @@ cd ResNet
  python train.py --dataset ImageNet --model resnet152 --learning-rule ARA --ARA-stride 3, 4, 2, 2 --gcp --device 0 1 2 3 4 5
 ```
 
-For experiments in Transformer with ABA1, run:
-
+The other experiments in Transformer, ViT, MLP-Mixer is 
+ 
 ```train_res18
 cd Transformer
  python train.py --batch_size 4096 --dataset_name IWSLT --language_direction G2E --learning_rule asa2 --gcp True --device 0 --get_li True
 ```
-
- For experiments in ViT with ASA1, run:
 
 ```train_res18
 cd ViT
