@@ -100,7 +100,17 @@ python learning_indicator.py --li_path <path/to/li>
 ```
 
  <p align="center"><img src="./Fig/Learning Indicator.png"  width="750" height="250">
+
  
+## Reference Codes
+  
+  https://github.com/gordicaleksa/pytorch-original-transformer
+  
+  https://github.com/omihub777/ViT-CIFAR
+  
+  https://github.com/omihub777/MLP-Mixer-CIFAR
+  
+  
  ## Lisense
 
 > All content in this repository is licensed under the MIT license. 
