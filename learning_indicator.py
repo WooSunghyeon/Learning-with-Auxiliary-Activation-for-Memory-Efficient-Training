@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import argparse
 parser = argparse.ArgumentParser()
 args = parser.parse_args()
-parser.add_argument('--model_path', type=str, help='The path to the saved model file to evaluation')
+parser.add_argument('--li_path', type=str, help='The path to the li file to make graph')
 
 def main():
     
