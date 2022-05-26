@@ -20,7 +20,7 @@ conda activate asap
 ```
 ## Data 
 
- We prepaired Tiny-ImageNet and IWSLT-2016 as follow: [data](https://www.image-net.org/download)
+ We prepaired Tiny-ImageNet and IWSLT-2016 as follow: [data]([https://www.image-net.org/download](https://drive.google.com/drive/folders/1gogdZW1AUolzVuYBm86r0cIiKo8m32aL?usp=sharing))
  
 ImageNet also can be downloded by [here](https://www.image-net.org/download).
  
@@ -67,7 +67,7 @@ cd MLP-Mixer
  
 ## Pretrained Models
  
- We prepaired some pretrained model which can do evaluate as follow: [pretrained_model](https://www.image-net.org/download)
+ We prepaired some pretrained model which can do evaluate as follow: [pretrained_model](https://drive.google.com/drive/folders/19YTFrFeGqffV9wjsTz2QygiOGMdVYlTB?usp=sharing)
  
 ## Evaluation
 
