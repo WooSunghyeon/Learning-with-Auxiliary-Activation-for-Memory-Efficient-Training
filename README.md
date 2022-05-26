@@ -51,7 +51,7 @@ python train.py --dataset <type of dataset> --model <type of model> --learning-r
 
 ## Results
 
-The evaluation results of our code is as follows:
+The evaluation results of our code are as follows:
   
 <p align="center"><img src="./Fig/ARA_Results.png"  width="750" height="380">
   
