@@ -98,7 +98,7 @@ The evaluation results of our code are as follows:
  Therefore, `li.py` is provided to make graph of the learning distributions.
 
 ```li
-python li.py --li_path <path/to/li>
+python learning_indicator.py --li_path <path/to/li>
 ```
 
  <p align="center"><img src="./Fig/Learning Indicator.png"  width="750" height="250">
