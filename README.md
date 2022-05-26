@@ -4,7 +4,7 @@ This repository is the official implementation of Auxiliary-Activation-Learning.
 
 + The proposed learning rule store auxiliary activations instead of actual input activations during forward propagation.
 + The proposed learning rule reduces training memory requirements without additional recomputation while achieving high performance close to backpropagation.
-+ Details can be found in our paper .  
++ Details can be found in our paper (https://openreview.net/forum?id=w1JAXsQqdm).  
 
 <p align="center"><img src="./Fig/ARA_Block.png"  width="760" height="475">
  
