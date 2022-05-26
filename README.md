@@ -6,7 +6,7 @@ This repository is the official implementation of Auxiliary-Activation-Learning.
 + The proposed learning rule reduces training memory requirements without additional recomputation while achieving high performance close to backpropagation.
 + Details can be found in our paper (https://openreview.net/forum?id=w1JAXsQqdm).  
 
-<p align="center"><img src="./Fig/ARA_Block.png"  width="700" height="380">
+<p align="center"><img src="./Fig/ARA_Block.png"  width="700" height="420">
  
 <p align="center"><img src="./Fig/ABA_Transformer.png"  width="850" height="500">
 
