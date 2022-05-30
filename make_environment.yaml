@@ -1,4 +1,4 @@
-name: AAL3
+name: aal
 channels:
   - pytorch
   - conda-forge
