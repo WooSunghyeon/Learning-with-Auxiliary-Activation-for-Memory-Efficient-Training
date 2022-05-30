@@ -15,7 +15,7 @@ This repository is the official implementation of Auxiliary-Activation-Learning.
 To install requirements:
 
 ```setup
-conda env create -f aal.yaml
+conda env create -f mkae_enviroment.yaml
 conda activate aal
 ```
 ## Data 
@@ -60,7 +60,7 @@ python train.py --dataset c10 --label-smoothing --autoaugment --get-li --device 
  
 ```train_res18
 cd MLP-Mixer
- python train.py --dataset c10 --model mlp_mixer --autoaugment --cutmix-prob 0.5 --learning-rule asa4 --get-li --device 0
+python train.py --dataset c10 --model mlp_mixer --autoaugment --cutmix-prob 0.5 --learning-rule asa4 --get-li --device 0
 ```
 
  
