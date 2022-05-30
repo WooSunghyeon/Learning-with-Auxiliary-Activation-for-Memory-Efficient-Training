@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 from einops.layers.torch import Rearrange
-import torchsummary
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
@@ -128,4 +127,4 @@ if __name__ == '__main__':
         off_act=False,
         is_cls_token=True
         )
-    torchsummary.summary(net, (3,32,32))
+    #torchsummary.summary(net, (3,32,32))
