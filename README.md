@@ -15,7 +15,7 @@ This repository is the official implementation of Auxiliary-Activation-Learning.
 To install requirements:
 
 ```setup
-conda env create -f mkae_enviroment.yaml
+conda env create -f make_enviroment.yaml
 conda activate aal
 ```
 ## Data 
