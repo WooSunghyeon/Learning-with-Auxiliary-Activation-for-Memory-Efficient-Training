@@ -5,7 +5,6 @@ import os
 import torch
 from torch import nn
 from torch.optim import Adam
-from torch.utils.tensorboard import SummaryWriter
 
 from utils.optimizers_and_distributions import CustomLRAdamOptimizer, LabelSmoothingDistribution
 from transformer_model import Transformer
@@ -34,13 +33,12 @@ li=[]
 total_li=[]
 global_train_step, global_val_step = [0, 0]
 max_mem = 0
-writer = SummaryWriter()  # (tensorboard) writer will output to ./runs/ directory by default
 
 # Simple decorator function so that I don't have to pass these arguments every time I call get_train_val_loop
 def get_train_val_loop(transformer, custom_lr_optimizer, kl_div_loss, label_smoothing, pad_token_id, time_start):
 
     def train_val_loop(is_train, token_ids_loader, epoch):
-        global num_of_trg_tokens_processed, global_train_step, global_val_step, writer, train_losses, val_losses, max_mem, li
+        global num_of_trg_tokens_processed, global_train_step, global_val_step, train_losses, val_losses, max_mem, li
         if is_train:
             transformer.train()
             global total_li
@@ -81,7 +79,6 @@ def get_train_val_loop(transformer, custom_lr_optimizer, kl_div_loss, label_smoo
                 num_of_trg_tokens_processed += num_trg_tokens
 
                 if training_config['enable_tensorboard']:
-                    writer.add_scalar('training_loss', loss.item(), global_train_step)
                     train_losses.append(loss.item())
                     
                 if training_config['console_log_freq'] is not None and batch_idx % training_config['console_log_freq'] == 0:
@@ -105,7 +102,6 @@ def get_train_val_loop(transformer, custom_lr_optimizer, kl_div_loss, label_smoo
                 global_val_step += 1
 
                 if training_config['enable_tensorboard']:
-                    writer.add_scalar('val_loss', loss.item(), global_val_step)
                     val_losses.append(loss.item())
             
     return train_val_loop
@@ -216,7 +212,6 @@ def train_transformer(training_config):
 
             bleu_score = utils.calculate_bleu_score(transformer, val_token_ids_loader, trg_field_processor)
             if training_config['enable_tensorboard']:
-                writer.add_scalar('bleu_score', bleu_score, epoch)
                 bleu_scores.append(bleu_score)
             # Save the transformer which has best bleu
             if bleu_score > max_bleu:
